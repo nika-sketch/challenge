@@ -32,7 +32,7 @@ class UserDetailFragment :
         }
     }
 
-    private fun observes() {
+    private suspend fun observes() {
         viewLifecycleOwner.lifecycleScope.launch {
             viewModel.userDetailFlow.collect {
                 when (it.status) {
@@ -51,6 +51,4 @@ class UserDetailFragment :
             }
         }
     }
-
-
 }

@@ -15,6 +15,6 @@ interface ApiService {
     suspend fun getUsers(@Query("page") page: Int): Response<Users>
 
     @GET(ApiEndpoints.USER_DETAIL)
-    suspend fun getUserDetail(@Path("idd") id: Int): Response<UserDetail>
+    suspend fun getUserDetail(@Path("id") id: Int): Response<UserDetail>
 
 }

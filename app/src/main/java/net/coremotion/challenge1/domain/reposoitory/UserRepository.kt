@@ -1,6 +1,5 @@
 package net.coremotion.challenge1.domain.reposoitory
 
-import Users
 import net.coremotion.challenge1.data.remote.ApiService
 import net.coremotion.challenge1.common.Resource
 import net.coremotion.challenge1.domain.model.UserDetail

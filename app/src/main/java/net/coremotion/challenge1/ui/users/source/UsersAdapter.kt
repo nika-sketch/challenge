@@ -27,8 +27,7 @@ class UsersAdapter() : PagingDataAdapter<Users.Data, UsersAdapter.UserViewHolder
         )
     )
 
-    inner class UserViewHolder(private val binding: ItemUserBinding) :
-        RecyclerView.ViewHolder(binding.root), View.OnClickListener {
+    inner class UserViewHolder(private val binding: ItemUserBinding) : RecyclerView.ViewHolder(binding.root), View.OnClickListener {
         private var user: Users.Data? = null
         fun onBind() {
             this.user = getItem(bindingAdapterPosition)

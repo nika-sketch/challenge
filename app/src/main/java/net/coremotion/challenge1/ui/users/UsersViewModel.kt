@@ -17,8 +17,7 @@ class UsersViewModel @Inject constructor(
     private val userRepository: UserRepository
 ) : ViewModel() {
 
-    fun usersFlow() =
-        Pager(
+    fun usersFlow() = Pager(
             config = PagingConfig(pageSize = 1,maxSize = 200),
             pagingSourceFactory = { UsersPagingSource(userRepository) })
             .flow.cachedIn(CoroutineScope(Main))
